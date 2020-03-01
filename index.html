@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Nicolas Carbonnier | Portfolio</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Nicolas Carbonnier"/>
+        <meta name="copyright" content="Nicolas Carbonnier"/>
+        <meta name="description" content="Portfolio de Nicolas Carbonnier, étudiant en Licence 3 Sciences Cognitive à l'IDMC de Nancy et développeur Java, HTML, CSS, JavaScript & PHP"/>
+        <meta name="keywords" content="Nicolas Carbonnier, étudiant, student, licence, sciences cognitives, informatique, java, html, css, javascript, php, jquery, ajax, dut, nancy, saint dié"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="load">
+            <div>Nicolas<span class="bold">Carbonnier</span></div>
+            <noscript>Ce site a besoin de JavaScript pour fonctionner</noscript>
+            <img src="icons/loading.svg"/>
+        </div>
+        <div class="status">Le formulaire a bien été envoyé</div>
+        <nav>
+            <div>
+                <div id="title">
+                    Nicolas<span class="bold">Carbonnier</span>
+                </div>
+                <div class="menu">
+                    <a href="javascript:void(0)" title="Afficher le menu" class="hamburger" onclick="toggleMenu()">
+                        <img src="icons/menu.svg" alt="Menu"/>
+                    </a>
+                    <a href="javascript:void(0)" title="Fermer le menu" class="hamburger" onclick="toggleMenu()">
+                        <img src="icons/close_alt.svg" alt="Fermer le menu"/>
+                    </a>
+                    <a href="#home" title="Accueil" id="homeB">Accueil</a>
+                    <a href="#about" title="À propos" id="aboutB">À propos</a>
+                    <a href="#skills" title="Compétences" id="skillsB">Compétences</a>
+                    <a href="#portfolio" title="Portfolio" id="portfolioB">Portfolio</a>
+                    <a href="#contact" title="Contact" id="contactB">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header id="home">
+            <div>
+                <div class="homePres">
+                    <img src="img/pp-flat.png"/>
+                    <div>
+                        <p class="name">Nicolas Carbonnier</p>
+                        <p class="student">Étudiant en Sciences Cognitives</p>
+                    </div>
+                    <p class="developer">Développeur Java, HTML, CSS, JavaScript & PHP</p>
+                </div>
+            </div>
+            <a href="#about" class="scrollDown">
+                <img src="icons/clicker.svg" class="mouse"/>
+                <img src="icons/down.svg" class="down"/>
+            </a>
+        </header>
+        <section id="about">
+            <div>
+                <h1>À propos de moi</h1>
+                <div class="container">
+                    <div class="presentation">
+                        <div class="presText">
+                            <h2>Nicolas Carbonnier, 20 ans</h2>
+                            <h3>Étudiant en L3 <span class="blue resetColor">Sciences Cognitives</span></h3>
+                            <p>Ma formation a débuté en 2016 avec un <span class="blue resetColor">DUT Informatique</span> à Saint-Dié-des-Vosges et m'a permis d'acquérir des compétences dans différents domaines, principalement en <span class="green resetColor">Développement Web</span>, en <span class="green resetColor">Gestion de Bases de Données</span> et en <span class="green resetColor">Programmation Orientée Objet</span>.</p>
+                            <p>Après l'obtention de mon diplôme en 2018, j'ai poursuivi mes études en intégrant la 2ème année de <span class="blue resetColor">Licence MIASHS</span> parcours Sciences Cognitives à l'IDMC de Nancy. Cela m'a ouvert la porte sur d'autres domaines comme la <span class="green resetColor">Biologie</span> ou la <span class="green resetColor">Psychologie</span> tout en améliorant et en étoffant mes compétences informatiques, notamment avec de l'<span class="green resetColor">Intelligence Artificielle</span>, du <span class="green resetColor">Traitement Automatique des Langues</span> et de l'<span class="green resetColor">Ergonomie Cognitive</span>.</p>
+                            <p>Pour la suite, je pense poursuivre ma formation avec le Master Sciences Cognitives, notamment pour l'<span class="green resetColor">UX Design</span>, l'<span class="green resetColor">IA</span> et le <span class="green resetColor">Game Design</span>.</p>
+                        </div>
+                        <img src="img/photo.jpeg" alt="Ma photo"/>
+                    </div>
+                    <a href="docs/CARBONNIER_Nicolas_CV.pdf" title="Télécharger mon CV" target="_blank" class="button">Télécharger mon CV</a>
+                </div>
+            </div>
+            <div class="about-bg parallax">
+                <div>
+                    <p>Je vous laisse découvrir plus en détail mes compétences et les divers projets auxquels j'ai participé.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div>
+                <h1>Mes Compétences</h1>
+                <div class="container">
+                    <div class="competences">
+                        <div class="comp">
+                            <h2>Compétences</h2>
+                            <ul>
+                                <li>Programmation Orientée Objet</li>
+                                <li>Développement Web</li>
+                                <li>Gestion de Bases de Données</li>
+                                <li>Gestion de Projet (réflexion, plannification, répartition des tâches...)</li>
+                                <li>Conception (maquettage et implémentation)</li>
+                            </ul>
+                            <h2>Savoir-être</h2>
+                            <p>Curieux, créatif, appliqué, autonome, à l'écoute et passionné</p>
+                        </div>
+                        <img src="img/computer.svg" class="computer" alt="Ordinateur"/>
+                        <div class="tech">
+                            <h2>Technologies</h2>
+                            <ul class="techList">
+                                <li>Java</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>AJAX</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <h2>Outils</h2>
+                            <ul>
+                                <li>Logiciels de développement (Netbeans, Scene Builder, Visual Studio Code...)</li>
+                                <li>Travail collaboratif (Github, Trello)</li>
+                                <li>VirtualBox</li>
+                                <li>Photoshop, Illustrator, Adobe XD, Vegas Pro, Cinema 4D</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-bg parallax">
+                <div>
+                    <p>Ma formation et mes passions pour le graphisme et la vidéo m'ont permis d'acquérir des compétences dans plusieurs domaines liés au multimédia et à Internet.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div>
+                <h1>Mon Portfolio</h1>
+                <div class="container">
+                    <div class="port">
+                        <a href="#nc" title="Nicolas Carbonnier" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/nc/nc_min.jpg"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>Nicolas Carbonnier</h2>
+                            <p>Développement Web</p>
+                        </a>
+                        <a href="#20483D" title="2048 3D" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/20483D/20483D_min.jpg"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>2048 3D</h2>
+                            <p>Programmation Orientée Objet</p>
+                        </a>
+                        <a href="#finstere" title="Finstere Flure" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/finstere/finstere_min.jpg"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>Finstere Flure</h2>
+                            <p>Programmation Orientée Objet</p>
+                        </a>
+                        <a href="#naMem" title="naMemorizer" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/naMem/naMem_min.jpg"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>naMemorizer</h2>
+                            <p>Développement Web</p>
+                        </a>
+                        <a href="#horde" title="Horde" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/horde/horde_min.jpg"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>Horde</h2>
+                            <p>Programmation Orientée Objet</p>
+                        </a>
+                        <a href="#ssr" title="SSR Disponibility" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/ssr/ssr_min.jpg" alt="SSR Disponibility"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>SSR Disponibility</h2>
+                            <p>Développement Web</p>
+                        </a>
+                        <a href="#cdpt" title="Chalet des Petites Tilles" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/cdpt/cdpt_min.jpg" alt="Chalet des Petites Tilles"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>Chalet des Petites Tilles</h2>
+                            <p>Développement Web</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-bg parallax">
+                <div>
+                    <div>
+                        <img src="img/web.svg" alt="Sites Web"/>
+                        <p><span class="number">2</span> sites Web complets</p>
+                    </div>
+                    <div>
+                        <img src="img/programming.svg" alt="Projets de programmation"/>
+                        <p><span class="number">3</span> projets de programmation</p>
+                    </div>
+                    <div>
+                        <img src="img/project.svg" alt="Projets"/>
+                        <p><span class="number">7</span> projets au total</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h1>Contact</h1>
+                <div class="container">
+                    <div class="contactMe">
+                        <h2>Mon profil vous intéresse ? Envoyez moi en message</h2>
+                    </div>
+                    <form class="contactForm">
+                        <div class="inputContainer">
+                            <input type="text" name="name" id="name" placeholder="Nom" required/>
+                            <div class="icon"><img src="icons/moustache.svg" alt="Nom"/></div>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="email" name="email" id="email" placeholder="Email" required/>
+                            <div class="icon"><img src="icons/at.svg" alt="Email"/></div>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="text" name="subject" id="subject" placeholder="Sujet" required/>
+                            <div class="icon"><img src="icons/speech-bubble.svg" alt="Sujet"/></div>
+                        </div>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        <div class="inputContainer">
+                            <input type="checkbox" name="checkRGPD" id="checkRGPD" required/>
+                            <label for="checkRGPD">En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées pour permettre de me recontacter.</label>
+                        </div>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                    <a href="mailto:carbonnier.nico@gmail.com" title="Envoyez moi un mail" class="button">carbonnier.nico@gmail.com</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="socialbar">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/nicolas-carbonnier/" title="LinkedIn" class="linkedin" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"/></a>
+                    <a href="https://github.com/nicolas-carbonnier" title="Github" class="github" target="_blank"><img src="icons/github.svg" alt="Github"/></a>
+                </div>
+                <div>Nicolas<span class="bold">Carbonnier</span></div>
+            </div>
+            <p>
+                Nicolas Carbonnier © 2020 | <a href="#mentions" title="Mentions légales" class="ment">Mentions légales</a>
+            </p>
+        </footer>
+        <div class="toTop">
+            <a href="#home" title="Retourner en haut"><img src="icons/up-arrow.svg" alt="/\"/></a>
+        </div>
+        <div class="overlayBg"></div>
+        <section class="overlay" id="nc">
+            <div>
+                <a href="#nc" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#20483D" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>Nicolas Carbonnier</h1>
+                <img src="portfolio/nc/nc.jpg" alt="Nicolas Carbonnier" class="overlayImg"/>
+                <h2>Développement Web</h2>
+                <h3>2020</h3>
+                <p>Développement de mon <a href="https://nicolas-carbonnier.github.io" title="Portfolio">Portfolio</a> pour me présenter et vous faire découvrir mon parcours et mes projets.</p>
+                <div class="flex">
+                    <ul>
+                        <li>Développement from scratch en HTML et CSS</li>
+                        <li>Dynamisme du site en JavaScript et jQuery</li>
+                        <li>Envoi des formulaires avec <a href="https://formspree.io/" title="Formspree.io" target="_blank">formspree.io</a> et AJAX</li>
+                        <li>Référencement naturel SEO</li>
+                        <li>Site Responsive</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>AJAX</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <a href="https://nicolas-carbonnier.github.io" title="Visiter le site" class="button">Visiter le site</a>
+            </div>
+        </section>
+        <section class="overlay" id="20483D">
+            <div>
+                <a href="#20483D" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#nc" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <a href="#finstere" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>2048 3D</h1>
+                <img src="portfolio/20483D/20483D.jpg" alt="2048 3D" class="overlayImg"/>
+                <h2>Programmation Orientée Objet</h2>
+                <h3>2019</h3>
+                <p>Développement d'une application Java permettant de jouer au <a href="https://joppi.github.io/2048-3D/" title="2048 3D" target="_blank">2048 3D</a>. Réalisé dans le cadre du projet d'Ingénierie Logicielle de L3 Sciences Cognitives (Semestre 5).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Projet de groupe avec <a href="https://www.linkedin.com/in/tom-wysocki-/" title="Tom Wysocki" target="_blank">Tom Wysocki</a>, Lucille Dumont et Élise Perrot</li>
+                        <li>Réflexion sur la structure du projet en groupe</li>
+                        <li>Mise en place et communication avec la base de données (Élise et moi)</li>
+                        <li>Interface en JavaFX (Lucille et Tom)</li>
+                        <li>Gestion des comptes (Lucille et moi)</li>
+                        <li>Sauvegarde par sérialisation (Tom et moi)</li>
+                        <li>Consultation du classement et de l'historique des parties (Tom et moi)</li>
+                        <li>Changement de thème (Lucille)</li>
+                        <li>Javadoc (moi)</li>
+                        <li>Rendu du code source, d'un rapport et d'une soutenance</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/nicolas-carbonnier/Projet_2048_Nico_Elise_Tom_Lucille" title="Consulter le code source" target="_blank" class="button">Consulter le code source</a>
+            </div>
+        </section>
+        <section class="overlay" id="finstere">
+            <div>
+                <a href="#finstere" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#20483D" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <a href="#naMem" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>Finstere Flure</h1>
+                <img src="portfolio/finstere/finstere.jpg" alt="Finstere Flure" class="overlayImg"/>
+                <h2>Programmation Orientée Objet</h2>
+                <h3>2019</h3>
+                <p>Développement d'une application Java permettant de jouer au jeu de plateau <a href="http://jeuxstrategieter.free.fr/Finstere_flure_complet.php" title="Règles de Finstere Flure" target="_blank">Finstere Flure</a>. Réalisé dans le cadre du projet de Programmation Orientée Objet de L2 Sciences Cognitives (Semestre 4).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Projet de groupe avec <a href="https://www.linkedin.com/in/tom-wysocki-/" title="Tom Wysocki" target="_blank">Tom Wysocki</a> et <a href="https://www.linkedin.com/in/manon-watelet-05690a194/" title="Manon Watelet" target="_blank">Manon Watelet</a></li>
+                        <li>Réflexion sur la structure du projet en groupe</li>
+                        <li>Interface graphique en Swing</li>
+                        <li>Possibilité de jouer en ligne de commande</li>
+                        <li>Rendu du code source, d'un rapport et d'une soutenance</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>Java</li>
+                        <li>Swing</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/nicolas-carbonnier/Finstere_Flure" title="Consulter le code source" target="_blank" class="button">Consulter le code source</a>
+            </div>
+        </section>
+        <section class="overlay" id="naMem">
+            <div>
+                <a href="#naMem" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#finstere" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <a href="#horde" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>naMemorizer</h1>
+                <img src="portfolio/naMem/naMem.jpg" alt="naMemorizer" class="overlayImg"/>
+                <h2>Développement Web</h2>
+                <h3>2019</h3>
+                <p>Développement d'un site à destination des enseignants afin de les aider à mémoriser le nom de leurs étudiants grâce à un jeu de mémoire. Réalisé dans le cadre du projet de Web Avancé de L2 Sciences Cognitives (Semestre 4).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Projet de groupe avec Nathan Minger, Tristan Garni et Gael Husson</li>
+                        <li>Réflexion sur l'architecture du site en groupe</li>
+                        <li>Maquettage sur Adobe XD (moi)</li>
+                        <li>Mise en place de la base de données (Nathan et Tristan)</li>
+                        <li>Intégration en HTML et CSS (Gael et moi)</li>
+                        <li>Communication avec la base et authentification (Nathan et Tristan)</li>
+                        <li>Rendu du code source, d'un rapport et d'une soutenance</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/nicolas-carbonnier/naMemorizer" title="Consulter le code source" target="_blank" class="button">Consulter le code source</a>
+            </div>
+        </section>
+        <section class="overlay" id="horde">
+            <div>
+                <a href="#horde" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#naMem" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <a href="#ssr" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>Horde</h1>
+                <img src="portfolio/horde/horde.jpg" alt="Horde" class="overlayImg"/>
+                <h2>Programmation Orientée Objet</h2>
+                <h3>2018</h3>
+                <p>Développement d'un jeu en ligne de commande basé sur <a href="http://www.hordes.fr/#index" title="Hordes" target="_blank">Hordes</a> de Twinoid. Réalisé dans le cadre du projet de Programmation Orientée Objet de L2 Sciences Cognitives (Semestre 3).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Projet de groupe avec <a href="https://www.linkedin.com/in/tom-wysocki-/" title="Tom Wysocki" target="_blank">Tom Wysocki</a> et <a href="https://www.linkedin.com/in/anne-laprevote/" title="Anne Laprevote" target="_blank">Anne Laprevote</a></li>
+                        <li>Réflexion sur la structure, les mécaniques et l'affichage du jeu en groupe</li>
+                        <li>Implémentation en Java par mes soins</li>
+                        <li>Rendu du code source et d'un rapport</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/nicolas-carbonnier/Horde" title="Consulter le code source" target="_blank" class="button">Consulter le code source</a>
+            </div>
+        </section>
+        <section class="overlay" id="ssr">
+            <div>
+                <a href="#ssr" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#horde" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <a href="#cdpt" title="Suivant" class="next"><img src="icons/next.svg"/></a>
+                <h1>SSR Disponibility</h1>
+                <img src="portfolio/ssr/ssr.jpg" alt="SSR Disponibility" class="overlayImg"/>
+                <h2>Développement Web</h2>
+                <h3>2018</h3>
+                <p>Développement d'un module pour le CMS Xoops indiquant la disponibilité des membres de l'équipe informatique de l'ONF Grand-Est. Réalisé dans le cadre de mon stage de fin de DUT Informatique.</p>
+                <div class="flex">
+                    <ul>
+                        <li>Bloc du module affichant la liste des membres, leur status et leurs coordonnées</li>
+                        <li>Récupération des coordonnées via LDAP</li>
+                        <li>Enregistrement des événements Outlook dans une base de données</li>
+                        <li>Interface d'adminisation pour gérer les membres de l'équipe, paramétrer les filtres...</li>
+                        <li>Livré avec une documentation</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Xoops</li>
+                        <li>Smarty</li>
+                    </ul>
+                </div>
+                <a href="docs/Rapport_ONF.pdf" title="Consulter mon Rapport" target="_blank" class="button">Consulter mon Rapport</a>
+            </div>
+        </section>
+        <section class="overlay" id="cdpt">
+            <div>
+                <a href="#cdpt" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <a href="#ssr" title="Précédent" class="prec"><img src="icons/prec.svg"/></a>
+                <h1>Chalet des Petites Tilles</h1>              
+                <img src="portfolio/cdpt/cdpt.jpg" alt="Chalet des Petites Tilles" class="overlayImg"/>
+                <h2>Développement Web</h2>
+                <h3>2017 | Dernière mise à jour en janvier 2019</h3>
+                <p>Développement du site <a href="https://chaletdestilles.000webhostapp.com" title="Chalet des Petites Tilles" target="_blank">chaletdestilles.000webhostapp.com</a>, vitrine pour une location de chalet à Gerbépal dans les Vosges (88).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Développement from scratch en HTML et CSS</li>
+                        <li>Envoi des formulaires avec <a href="https://formspree.io/" title="Formspree.io" target="_blank">formspree.io</a> et AJAX</li>
+                        <li>Référencement naturel SEO</li>
+                        <li>Site Responsive</li>
+                        <li>Mises à jour régulières</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>AJAX</li>
+                    </ul>
+                </div>
+                <a href="https://chaletdestilles.000webhostapp.com" title="Visiter le site" target="_blank" class="button">Visiter le site</a>
+            </div>
+        </section>
+        <section class="overlay" id="mentions">
+            <div>
+                <a href="#mentions" title="Fermer" class="close"><img src="icons/close.svg"/></a>
+                <h1>Mentions légales</h1>
+                <p>
+                    Merci de lire avec attention les différentes modalités d’utilisation du présent site avant d’y parcourir ses pages. En vous connectant sur ce site, vous acceptez sans réserves les présentes modalités. Aussi, conformément à l’article n°6 de la Loi n°2004-575 du 21 Juin 2004 pour la confiance dans l’économie numérique, les responsables du présent site internet <a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a> sont :
+                </p>
+                <h3>Éditeur du Site :</h3>
+                <p>
+                    Carbonnier Nicolas
+                    <br/>
+                    3 Chemin Rural dit de Vaux, 55000 Tannois
+                    <br/>
+                    Email : carbonnier.nico@gmail.com
+                    <br/>
+                    Site Web : <a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a>
+                </p>
+                <h3>Hébergeur :</h3>
+                <p>
+                    GitHub
+                    <br/>
+                    San Francisco, Californie, États-Unis
+                    <br/>
+                    Site Web : <a href="http://github.com">github.com</a>
+                </p>
+                <h3>Développeur :</h3>
+                <p>
+                    Nicolas Carbonnier
+                    <br/>
+                    3 Chemin Rural dit de Vaux, 55000 Tannois
+                    <br/>
+                    Site Web : <a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a>
+                </p>
+                <h2>Conditions d’utilisation :</h2>
+                <p>
+                    Ce site (<a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a>) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur confort d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à des navigateurs modernes comme Firefox, Google Chrome, Safari, etc… Les mentions légales ont été générées sur le site <a title="Générateur de mentions légales pour site internet gratuit" href="http://www.generateur-de-mentions-legales.com">Générateur de mentions légales</a>, offert par <a title="Imprimerie Paris" href="http://welye.com">Welye</a>.
+                </p>
+                <h3>Services fournis :</h3>
+                <p>
+                    Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. En conséquence, ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour
+                </p>
+                <p>
+                    Les liens hypertextes mis en place dans le cadre du présent site internet en direction d'autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Nicolas Carbonnier.
+                </p>
+                <h3>Propriété intellectuelle :</h3>
+                <p>
+                    Tout le contenu du présent sur le site <a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a>, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de la Carbonnier Nicolas à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
+                </p>
+                <p>
+                    Icônes faites par <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>, <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> et <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> de <a href="https://www.flaticon.com/" title="Flaticon"> flaticon.com</a>.
+                </p>
+                <p>
+                    Images de fond provenant de <a href="https://pixabay.com/" title="Pixabay">pixabay.com</a>.
+                </p>
+                <p>
+                    Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit de Nicolas Carbonnier. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés pourraient intenter une action en justice à votre encontre.
+                </p>
+                <h3>Données personnelles :</h3>
+                <p>
+                    De manière générale, vous n’êtes pas tenu de nous communiquer vos données personnelles lorsque vous visitez notre site Internet <a href="http://nicolas-carbonnier.github.io">nicolas-carbonnier.github.io</a>.
+                </p>
+                <p>
+                    Cependant, ce principe comporte certaines exceptions. En effet, pour certains services proposés par notre site, vous pouvez être amenés à nous communiquer certaines données telles que : votre nom, votre prénom et votre adresse électronique. Tel est le cas lorsque vous remplissez le formulaire qui vous est proposé en ligne, dans la rubrique «Contact». Dans tous les cas, vous pouvez refuser de fournir vos données personnelles. Dans ce cas, vous ne pourrez pas utiliser les services du site, notamment celui de solliciter nos services.
+                </p>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </body>
+</html>
