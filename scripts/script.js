@@ -197,13 +197,11 @@ function parallax() {
 }
 
 /* Appel des différentes fonctions */
-$(document).ready(function() {
+$(window).on('load', function() {
 	// Écran de chargement
-	setTimeout(function() {
-		$('body').css('overflow', 'auto');
-		$('.load').fadeOut();
-		scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-	}, 1000);
+	$('body').css('overflow', 'auto');
+	$('.load').fadeOut();
+	scrollWidth = window.innerWidth - document.documentElement.clientWidth;
 
 	var position = $(window).scrollTop() + parseFloat($('nav').css('height'));
 
