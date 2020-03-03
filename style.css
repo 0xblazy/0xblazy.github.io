@@ -3,20 +3,24 @@
     font-family: "Nunito Sans";
     src: url("fonts/NunitoSans-Bold.ttf");
     font-weight: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: "Nunito Sans";
     src: url("fonts/NunitoSans-SemiBold.ttf");
     font-weight: 600;
+    font-display: swap;
 }
 @font-face {
     font-family: "Nunito Sans";
     src: url("fonts/NunitoSans-Regular.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "Nunito Sans";
     src: url("fonts/NunitoSans-Light.ttf");
     font-weight: 300;
+    font-display: swap;
 }
 
 /* Roboto */
@@ -24,26 +28,31 @@
     font-family: "Roboto";
     src: url("fonts/Roboto-Bold.ttf");
     font-weight: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto-Medium.ttf");
     font-weight: 500;
+    font-display: swap;
 }
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto-Regular.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto-Light.ttf");
     font-weight: 300;
+    font-display: swap;
 }
 
 /* ACR A Extended */
 @font-face {
     font-family: "OCR A Extended";
-    src: url("fonts/OCR_A_Extended.TTF")
+    src: url("fonts/OCR_A_Extended.TTF");
+    font-display: swap;
 }
 
 
@@ -68,9 +77,15 @@
 }
 
 @keyframes coding {
-    0% {background-size: 195rem;}
-    90% {background-size: 205rem;}
-    100% {background-size: 195rem;}
+    0% {background-size: 105%;}
+    90% {background-size: 115%;}
+    100% {background-size: 105%;}
+}
+
+@keyframes coding-port {
+    0% {background-size: auto 105%;}
+    90% {background-size: auto 115%;}
+    100% {background-size: auto 105%;}
 }
 
 @keyframes mouseMoving {
@@ -313,8 +328,16 @@ nav.onTop .menu>a:before {
 
     background-image: url('img/home-bg.jpg');
     background-repeat: no-repeat;
+}
 
+#home.run-animation {
+    background-position: top left;
     animation: coding 20s ease infinite;
+}
+
+#home.run-animation-port {
+    background-position: top 40%;
+    animation: coding-port 20s ease infinite;
 }
 
 #home>div, #about>div, #skills>div, #portfolio>div, #contact>div {
@@ -2186,6 +2209,7 @@ footer>p>a {
         transform: none;
     }
 }
+
 
 /* Écrans tactiles (Smartphones) */
 @media screen and (hover: none) and (max-width: 780px) {

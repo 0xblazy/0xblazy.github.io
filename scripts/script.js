@@ -196,6 +196,15 @@ function parallax() {
 	});
 }
 
+/* Fix Écran d'accueil */
+function fixAccueil() {
+	if($('#home').width() > $('#home').height() * 1.5) {
+		$('#home').removeClass('run-animation-port').addClass('run-animation');
+	} else {
+		$('#home').removeClass('run-animation').addClass('run-animation-port');
+	}
+}
+
 /* Appel des différentes fonctions */
 $(window).on('load', function() {
 	// Écran de chargement
@@ -209,6 +218,7 @@ $(window).on('load', function() {
 	toTop(position);
 	animate(position);
 	parallax();
+	fixAccueil();
 });
 
 $(window).scroll(function() {
@@ -218,6 +228,10 @@ $(window).scroll(function() {
 	toTop(position);
 	animate(position);
 	parallax();
+});
+
+$(window).resize(function() {
+	fixAccueil();
 });
 
 /* Défilement fluide */
