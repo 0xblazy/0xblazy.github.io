@@ -5,3 +5,4 @@ Disallow: /icons/
 Disallow: /img/
 Disallow: /portfolio/
 Disallow: /scripts/
+Allow: /img/og-photo.jpg
