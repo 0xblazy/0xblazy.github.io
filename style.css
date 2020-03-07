@@ -1008,7 +1008,8 @@ textarea {
 
 #checkRGPD:not(:checked), #checkRGPD:checked {
     position: absolute;
-    top:0;
+    margin-top: 0.8rem;
+    margin-left: 0.2rem;
     opacity: 0.01;
 }
 
@@ -1330,6 +1331,7 @@ footer>p>a {
 
 .overlay>div {
     position: relative;
+    z-index: 111;
 
     width: 100rem;
 
@@ -1406,7 +1408,7 @@ footer>p>a {
 
 .close, .prec, .next {
     position: fixed;
-    z-index: 120;
+    z-index: 112;
 
     width: 3.2rem;
     height: 3.2rem;
@@ -1424,13 +1426,13 @@ footer>p>a {
 }
 
 .prec {
-    top: calc(50% - 1.6rem);
     margin-left: -4.8rem;
+    margin-top: calc(50vh - 1.6rem - 6.4rem);
 }
 
 .next {
-    top: calc(50% - 1.6rem);
     margin-left: calc(100rem - 6.4rem - 4.8rem);
+    margin-top: calc(50vh - 1.6rem - 6.4rem);
 }
 
 .close:hover, .prec:hover, .next:hover {
@@ -1468,7 +1470,7 @@ footer>p>a {
 /* Écrans moyens */
 @media screen and (max-width: 1281px) {
     /* Styles généraux */
-    nav>div, #home > div, #about > div:first-child, #skills > div:first-child, #portfolio > div:first-child, #contact > div, .about-bg > div, .skills-bg > div, .port-bg > div {
+    nav>div, #home>div, #about>div:first-child, #skills>div:first-child, #portfolio>div:first-child, #contact>div, .about-bg>div, .skills-bg>div, .port-bg>div {
         width: 98rem;
     }
 
@@ -1910,6 +1912,10 @@ footer>p>a {
     
     .prec {
         margin-left: 0;
+    }
+
+    .prec, .next {
+        margin-top: calc(50vh - 1.6rem - 2rem);
     }
 }
 

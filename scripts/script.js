@@ -3,6 +3,7 @@ var parallaxMargin = 1000;
 var titleMargin = 600;
 var contentMargin = 400;
 var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 /* Menu responsive */
 function toggleMenu() {
@@ -217,8 +218,14 @@ $(window).on('load', function() {
 	progress(position);
 	toTop(position);
 	animate(position);
-	parallax();
-	fixAccueil();
+	if (iOS) {
+		$('.parallax').css('background-attachment', 'scroll');
+		$('#home').removeClass('run-animation');
+		$('#home').css('background-size', 'cover');
+	} else {
+		parallax();
+		fixAccueil();
+	}
 });
 
 $(window).scroll(function() {
@@ -227,11 +234,15 @@ $(window).scroll(function() {
 	progress(position);
 	toTop(position);
 	animate(position);
-	parallax();
+	if (!iOS) {
+		parallax();
+	}
 });
 
 $(window).resize(function() {
-	fixAccueil();
+	if (!iOS) {
+		fixAccueil();
+	}
 });
 
 /* Défilement fluide */
