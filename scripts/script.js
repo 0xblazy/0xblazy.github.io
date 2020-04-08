@@ -210,6 +210,7 @@ function fixAccueil() {
 $(window).on('load', function() {
 	// Écran de chargement
 	$('body').css('overflow', 'auto');
+	$('.load').css('width', '100vw');
 	$('.load').fadeOut();
 	scrollWidth = window.innerWidth - document.documentElement.clientWidth;
 
@@ -270,6 +271,7 @@ $('a.project, a.ment').click(function() {
 
 	$('body').css('overflow','hidden');
 	$('body, nav').css('padding-right', scrollWidth);
+	$('footer').css('width', '100vw').css('padding-right', '+=' + scrollWidth + 'px');
 	$('.toTop').css('right', '+=' + scrollWidth + 'px');
 	$(id + ', .overlayBg').fadeIn(600);
 	$(id).scrollTop(0);
@@ -286,6 +288,7 @@ $('a.close').click(function() {
 	}, 599);
 	setTimeout(function() {
 		$('.toTop').css('right', '-=' + scrollWidth + 'px');
+		$('footer').css('padding-right', '-=' + scrollWidth + 'px').css('width', '');
 		$('body, nav').css('padding-right', 0);
 		$('body').css('overflow','auto');
 	}, 600);
@@ -362,10 +365,11 @@ $('.contactForm').on('submit', function(e) {
 		method: 'POST',
 		data: {
 			Nom: name,
-			_replyto:email,
-			Email:email,
-			Message:message,
-			_subject:subject,
+			_replyto: email,
+			Email: email,
+			Message: message,
+			_subject: subject,
+			Sujet: subject,
 		},
 		dataType:"json",
 		success:function() {
