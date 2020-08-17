@@ -102,7 +102,7 @@
 
 @keyframes bounce {
     0% {transform: scale(1);}
-    80% {transform: scale(1.4);}
+    66% {transform: scale(1.4);}
     100% {transform: scale(1);}
 }
 
@@ -520,7 +520,7 @@ p, li {
 }
 
 .button.bounce {
-    animation: bounce .3s ease 1;
+    animation: bounce .5s ease 1;
 }
 
 .button:hover {
@@ -1375,6 +1375,11 @@ footer>p>a {
     font-weight: 500;
     text-decoration: none;
     color: #2D2D2D;
+    transition: color .2s ease;
+}
+
+.overlay p a:hover, .overlay li a:hover {
+    color: #5B7E96;
 }
 
 .overlay .flex {
@@ -1731,25 +1736,9 @@ footer>p>a {
         display: block;
     }
     
-    a.hamburger>img {
-        height: 2.8rem;
-        margin: 1.6rem;
-    
-        filter: invert(15%) sepia(0%) saturate(0%) hue-rotate(225deg) brightness(102%) contrast(93%);
-    }
-
-    a.hamburger:hover>img {
-        filter: invert(53%) sepia(25%) saturate(544%) hue-rotate(161deg) brightness(84%) contrast(86%);
-    }
-    
-    .onTop .hamburger>img {
-        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(47deg) brightness(112%) contrast(107%);
-    }
-
-    .onTop .hamburger:hover>img {
-        filter: invert(73%) sepia(41%) saturate(329%) hue-rotate(163deg) brightness(82%) contrast(91%);
-    }
-    
+    .menu>a.hamburger:hover {
+        line-height: 6rem;
+    }    
     
     /* Accueil */
     .homePres {

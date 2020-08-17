@@ -24,6 +24,13 @@ function toggleMenu() {
 	}
 }
 
+/* Fix menu responsive */
+function fixMenu() {
+	if ($('body').height() > 780) {
+		$('.menu a').css('display', '');
+	}
+}
+
 /* Affichage bouton toTop */
 function toTop(position) {
 	if (position >= parseFloat($('nav').css('height')) * 2) {
@@ -244,6 +251,7 @@ $(window).resize(function() {
 	if (!iOS) {
 		fixAccueil();
 	}
+	fixMenu();
 });
 
 /* Défilement fluide */
