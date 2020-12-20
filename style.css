@@ -1351,8 +1351,12 @@ footer>p>a {
     transform: none;
 }
 
-.overlayImg {
+.overlayImg, .overlayVid {
     width: 100%;
+}
+
+.overlayVid {
+    background: #5B7E96;
 }
 
 .overlay h2 {
@@ -1371,6 +1375,10 @@ footer>p>a {
 
 #mentions h3+p {
     margin-top: 0.8rem;
+}
+
+.overlay p {
+    text-align: justify;
 }
 
 .overlay p a, .overlay li a {
@@ -1404,9 +1412,23 @@ footer>p>a {
     margin-right: 0;
 }
 
+.overlay .buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .overlay .button {
     margin: 0 auto;
     transform: scale(1);
+}
+
+.overlay .buttonsContainer .button {
+    margin: 0;
+    margin-right: 2.4rem;
+}
+
+.overlay .buttonsContainer .button:last-child {
+    margin-right: 0;
 }
 
 .overlay .button:hover {
@@ -1891,6 +1913,20 @@ footer>p>a {
     
     .overlay h1 {
         text-align: center;
+    }
+
+    .overlay .buttonsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .overlay .buttonsContainer .button {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .overlay .buttonsContainer .button:last-child {
+        margin-bottom: 0;
     }
     
     .close {

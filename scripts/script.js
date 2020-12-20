@@ -290,6 +290,7 @@ $('a.project, a.ment').click(function() {
 $('a.close').click(function() {
 	var id = $(this).attr('href');
 
+	$(id + ' .overlayVid').trigger('pause');
 	$(id + ', .overlayBg').fadeOut(600);
 	setTimeout(function() {
 		$(id).scrollTop(0);
@@ -313,6 +314,8 @@ $('a.prec').click(function() {
 	$(idPrec).css('overflow', 'hidden');
 	$(idPrec).css('padding-right', scrollWidth);
 	$(idPrec).show();
+
+	$(idCurr + ' .overlayVid').trigger('pause');
 
 	$(idPrec).animate({
 		left: '0px'
@@ -346,6 +349,7 @@ $('a.next').click(function() {
 
 	$(idCurr).css('overflow', 'hidden');
 	$(idCurr).css('padding-right', scrollWidth);
+	$(idCurr + ' .overlayVid').trigger('pause');
 
 	$(idCurr).animate({
 		left: '-' + width + 'px'

@@ -150,6 +150,14 @@
                             <h2>Nicolas Carbonnier</h2>
                             <p>Développement Web</p>
                         </a>
+                        <a href="#twister" title="Twister" class="project">
+                            <div class="portImg">
+                                <img src="portfolio/twister/twister_min.jpg" alt="Miniature Twister"/>
+                                <div class="over">+</div>
+                            </div>
+                            <h2>Twister</h2>
+                            <p>Programmation Embarquée</p>
+                        </a>
                         <a href="#cercle" title="Cercle SPA" class="project">
                             <div class="portImg">
                                 <img src="portfolio/cercle/cercle_min.jpg" alt="Miniature Cercle SPA"/>
@@ -217,11 +225,11 @@
                     </div>
                     <div>
                         <img src="img/programming.svg" alt="Projets de programmation"/>
-                        <p><span class="number">3</span> projets de programmation</p>
+                        <p><span class="number">4</span> projets de programmation</p>
                     </div>
                     <div>
                         <img src="img/project.svg" alt="Projets"/>
-                        <p><span class="number">8</span> projets au total</p>
+                        <p><span class="number">9</span> projets au total</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +274,7 @@
                 <div>Nicolas<span class="bold">Carbonnier</span></div>
             </div>
             <p>
-                Nicolas Carbonnier © 2020 | v1.3 | <a href="#mentions" title="Mentions légales" class="ment">Mentions légales</a>
+                Nicolas Carbonnier © 2020 | v1.4 | <a href="#mentions" title="Mentions légales" class="ment">Mentions légales</a>
             </p>
         </footer>
         <div class="toTop">
@@ -276,11 +284,11 @@
         <section class="overlay" id="nc">
             <div>
                 <a href="#nc" title="Fermer" class="close"><img src="icons/close.svg" alt="Fermer"/></a>
-                <a href="#cercle" title="Suivant" class="next"><img src="icons/next.svg" alt="Suivant"/></a>
+                <a href="#twister" title="Suivant" class="next"><img src="icons/next.svg" alt="Suivant"/></a>
                 <h1>Nicolas Carbonnier</h1>
                 <img src="portfolio/nc/nc.jpg" alt="Nicolas Carbonnier" class="overlayImg"/>
                 <h2>Développement Web</h2>
-                <h3>2020 | Dernière mise à jour en octobre 2020</h3>
+                <h3>2020 | Dernière mise à jour en décembre 2020</h3>
                 <p>Développement de mon <a href="https://nicolas-carbonnier.github.io" title="Portfolio">Portfolio</a> pour me présenter et vous faire découvrir mon parcours et mes projets.</p>
                 <div class="flex">
                     <ul>
@@ -301,16 +309,50 @@
                 <a href="https://nicolas-carbonnier.github.io" title="Visiter le site" class="button">Visiter le site</a>
             </div>
         </section>
+        <section class="overlay" id="twister">
+            <div>
+                <a href="#twister" title="Fermer" class="close"><img src="icons/close.svg" alt="Fermer"/></a>
+                <a href="#nc" title="Précédent" class="prec"><img src="icons/prec.svg" alt="Précédent"/></a>
+                <a href="#cercle" title="Suivant" class="next"><img src="icons/next.svg" alt="Suivant"/></a>
+                <h1>Twister</h1>
+                <video controls preload="metadata" class="overlayVid">
+                    <source src="portfolio/twister/twister.mp4" type="video/mp4"/>
+                </video>
+                <!--<img src="portfolio/twister/twister.jpg" alt="Twister" class="overlayImg"/>-->
+                <h2>Programmation Embarquée</h2>
+                <h3>2020</h3>
+                <p>Développement d'une application Java pour des robots Lego Mindstorms EV3 sous LeJOS pour les faire jouer à une version simplifiée du Twister. Réalisé dans le cadre du projet de Systèmes Autonomes et Programmation Embarquée de M1 Sciences Cognitives (Semestre 7).</p>
+                <div class="flex">
+                    <ul>
+                        <li>Projet de groupe avec <a href="https://www.linkedin.com/in/valentin-hajek-2b1935173/" title="Valentin Hajek" target="_blank">Valentin Hajek</a> et Tom Scheffmann</li>
+                        <li>Mise en place des différents comportements du robot : avancer/reculer, tourner, capter une couleur et s'arrêter</li>
+                        <li>Ajout des différentes fonctionnalités sous forme de Thread : calibration des couleurs, cartographie du plateau de jeu, boucle de jeu et navigation</li>
+                        <li>Communication avec un second robot pour lui envoyer la cartographie et jouer avec</li>
+                        <li>Calibration et cartographie entièrement fonctionnelles</li>
+                        <li>Plusieurs contraintes liées à l'accès aux robots et la crise sanitaire ne nous ont pas permis de finaliser ce projet</li>
+                        <li>Rendu du code source, d'un rapport et d'une vidéo de démonstration</li>
+                    </ul>
+                    <ul class="techList">
+                        <li>Java</li>
+                        <li>LeJOS EV3</li>
+                    </ul>
+                </div>
+                <div class="buttonsContainer">
+                    <a href="docs/Rapport_Mindstorms.pdf" title="Consulter le Rapport" target="_blank" class="button">Consulter le Rapport</a>
+                    <a href="https://github.com/nicolas-carbonnier/Projet_Robotique_Nico_Tom_Valentin" title="Consulter le code source" target="_blank" class="button">Consulter le code source</a>
+                </div>
+            </div>
+        </section>
         <section class="overlay" id="cercle">
             <div>
                 <a href="#cercle" title="Fermer" class="close"><img src="icons/close.svg" alt="Fermer"/></a>
-                <a href="#nc" title="Précédent" class="prec"><img src="icons/prec.svg" alt="Précédent"/></a>
+                <a href="#twister" title="Précédent" class="prec"><img src="icons/prec.svg" alt="Précédent"/></a>
                 <a href="#cdpt" title="Suivant" class="next"><img src="icons/next.svg" alt="Suivant"/></a>
                 <h1>Cercle SPA</h1>
                 <img src="portfolio/cercle/cercle.jpg" alt="Cercle SPA" class="overlayImg"/>
                 <h2>Développement Web</h2>
-                <h3>2020</h3>
-                <p>Développement de nouvelles fonctionnalités sur Cercle SPA, le logiciel de gestion clients du regroupement <a href="https://strategies-avenir.com/" title="Stratégies & Perspectives d'Avenir">Stratégies & Perspectives d'Avenir</a>, développé sur le framework Laravel. Réalisé dans le cadre de mon stage de fin de Licence MIASHS parcours Sciences Cognitives.</p>
+                <h3>2020 | Dernière mise à jour en décembre 2020</h3>
+                <p>Développement de nouvelles fonctionnalités sur Cercle SPA, le logiciel de gestion clients du regroupement <a href="https://strategies-avenir.com/" title="Stratégies & Perspectives d'Avenir">Stratégies & Perspectives d'Avenir</a>, développé sur le framework Laravel. Réalisé dans le cadre de mon stage de fin de Licence MIASHS parcours Sciences Cognitives et poursuivi aujourd'hui en CDI.</p>
                 <div class="flex">
                     <ul>
                         <li>Amélioration d'anciennes fonctionnalités</li>
@@ -319,6 +361,8 @@
                         <li>Ajout de widgets synthétisant l'activité du courtier</li>
                         <li>Gestion électronique des documents et stockage sur un bucket Amazon S3</li>
                         <li>Signature électronique par mail via le service <a href="https://www.docusign.fr/" title="DocuSign">DocuSign</a></li>
+                        <li>Mise en place d'une carte dynamique sur la page d'accueil pour localiser tous les cabinets du regroupement</li>
+                        <li>Ajout d'un module de comptabilité inspiré de l'ancien logiciel de SPA (en cours de développement)</li>
                     </ul>
                     <ul class="techList">
                         <li>Laravel</li>
@@ -331,6 +375,7 @@
                         <li>jQuery</li>
                         <li>Amazon S3</li>
                         <li>API REST (DocuSign)</li>
+                        <li>API JavaScript (Maps API)</li>
                     </ul>
                 </div>
                 <a href="docs/Rapport_CercleSPA.pdf" title="Consulter mon Rapport" target="_blank" class="button">Consulter mon Rapport</a>

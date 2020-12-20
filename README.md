@@ -2,6 +2,7 @@
 Portfolio de Nicolas Carbonnier, étudiant en 1ère année de Master Sciences Cognitive à l'IDMC de Nancy et développeur Java, HTML, CSS, JavaScript &amp; PHP
 
 **Changelog :**
+- v1.4 : Ajout Twister, modifications partie Portfolio
 - v1.3 : Mise à jour partie À propos, modification pp-flat
 - v1.2.1 : Corrections fautes
 - v1.2 : Ajout Cercle SPA, fix menu responsive
