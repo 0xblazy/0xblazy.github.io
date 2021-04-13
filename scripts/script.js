@@ -281,7 +281,7 @@ $('a.project, a.ment').click(function() {
 	$('body, nav').css('padding-right', scrollWidth);
 	$('footer').css('width', '100vw').css('padding-right', '+=' + scrollWidth + 'px');
 	$('.toTop').css('right', '+=' + scrollWidth + 'px');
-	$(id + ', .overlayBg').fadeIn(600);
+	$(id + ', .overlayBg').fadeIn(300);
 	$(id).scrollTop(0);
 	return false;
 });
@@ -291,16 +291,16 @@ $('a.close').click(function() {
 	var id = $(this).attr('href');
 
 	$(id + ' .overlayVid').trigger('pause');
-	$(id + ', .overlayBg').fadeOut(600);
+	$(id + ', .overlayBg').fadeOut(300);
 	setTimeout(function() {
 		$(id).scrollTop(0);
-	}, 599);
+	}, 299);
 	setTimeout(function() {
 		$('.toTop').css('right', '-=' + scrollWidth + 'px');
 		$('footer').css('padding-right', '-=' + scrollWidth + 'px').css('width', '');
 		$('body, nav').css('padding-right', 0);
 		$('body').css('overflow','auto');
-	}, 600);
+	}, 300);
 	return false;
 });
 
@@ -319,14 +319,14 @@ $('a.prec').click(function() {
 
 	$(idPrec).animate({
 		left: '0px'
-	}, 600, function() {
+	}, 300, function() {
 		$(idPrec).css('padding-right', 0);
 		$(idPrec).css('overflow', 'auto');
 	});
 
 	$(idCurr).animate({
 		left: width + 'px'
-	}, 600, function() {
+	}, 300, function() {
 		$(idCurr).scrollTop(0);
 		$(idCurr).hide();
 		$(idCurr).css('left', 0);
@@ -345,7 +345,7 @@ $('a.next').click(function() {
 
 	$(idNext).animate({
 		left: '0px'
-	}, 600);
+	}, 300);
 
 	$(idCurr).css('overflow', 'hidden');
 	$(idCurr).css('padding-right', scrollWidth);
@@ -353,7 +353,7 @@ $('a.next').click(function() {
 
 	$(idCurr).animate({
 		left: '-' + width + 'px'
-	}, 600, function() {
+	}, 300, function() {
 		$(idCurr).scrollTop(0);
 		$(idCurr).hide();
 		$(idCurr).css('left', 0);

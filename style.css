@@ -198,6 +198,8 @@ nav {
 
     background: #E2E2E2;
 
+    backdrop-filter: blur(0.5rem);
+
     transition: background .4s ease;
 }
 
@@ -840,6 +842,8 @@ p, li {
 
     background: rgba(221, 221, 221, 0.90);
 
+    backdrop-filter: blur(0.2rem);
+
     transition: height .4s ease;
 }
 
@@ -1356,7 +1360,7 @@ footer>p>a {
 }
 
 .overlayVid {
-    background: #5B7E96;
+    background: #2D2D2D;
 }
 
 .overlay h2 {
@@ -1906,7 +1910,7 @@ footer>p>a {
         padding: 2rem;
     }
     
-    .overlayImg {
+    .overlayImg, .overlayVid {
         width: 100vw;
         margin: 0 -2rem;
     }
